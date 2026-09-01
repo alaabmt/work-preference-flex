@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#182844"><title>تفضيلات العمل والمرونة — النسخة العربية البحثية V15</title>
+<meta name="theme-color" content="#182844"><title>تفضيلات العمل والمرونة — النسخة العربية البحثية V15.3</title>
 <style>
 :root{--ink:#172033;--muted:#6c7688;--paper:#f5f7fb;--white:#fff;--line:#e3e8f0;--navy:#182844;--navy2:#2b446d;--green:#38a56c;--blue:#4e7ed9;--gold:#d4a42d;--orange:#ea8334;--purple:#7468c9;--red:#c75858;--shadow:0 20px 55px rgba(31,48,78,.09);--soft:0 8px 25px rgba(31,48,78,.07)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.75;overflow-x:hidden}button,input,textarea{font:inherit}.hidden{display:none!important}.muted{color:var(--muted)}.shell{width:min(1160px,calc(100% - 28px));margin-inline:auto}.view{display:none}.view.active{display:block;animation:fade .28s ease}@keyframes fade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
@@ -193,18 +193,46 @@ html[dir="ltr"] .af-flex-note{text-align:left}
  </div>
 </div>
 <div class="form">
- <label>الاسم <span class="muted">(اختياري وللتقرير فقط)</span><input id="name" placeholder="مثال: شادية"></label>
- <label>الدور / الوظيفة <span class="muted">(اختياري)</span><input id="role" placeholder="مثال: مدير تدريب"></label>
+ <label>الاسم <span class="muted">(اختياري وللتقرير فقط)</span><input id="name" autocomplete="name"></label>
+ <label>المسمى الوظيفي أو الدور المهني <span class="muted">(اختياري)</span><input id="role" autocomplete="organization-title"></label>
  <div class="research-grid">
-  <label>رمز الدراسة <span class="muted">(إن أعطي لك)</span><input id="studyCode" placeholder="مثال: PILOT-A"></label>
-  <label>رمز إعادة الاختبار <span class="muted">(إن وجد)</span><input id="retestCode" placeholder="استخدم الرمز نفسه في المرة الثانية"></label>
-  <label>مستوى الدور
-   <select id="roleLevel"><option value="">اختر إن رغبت</option><option value="individual_contributor">مساهم فردي</option><option value="supervisor_team_lead">مشرف / قائد فريق</option><option value="manager">مدير</option><option value="senior_leadership">قيادة عليا</option><option value="other">أخرى</option></select>
+  <label>رمز الدراسة <span class="muted">(إن أعطي لك)</span><input id="studyCode"></label>
+  <label>رمز إعادة الاختبار <span class="muted">(إن وجد)</span><input id="retestCode"></label>
+  <label>نطاق مسؤوليتك الحالية
+   <span class="muted">أي وصف يعكس دورك الحالي بشكل أفضل؟</span>
+   <select id="roleLevel">
+    <option value="">اختر إن رغبت</option>
+    <option value="individual_specialist">أعمل في دور فردي أو تخصصي دون مسؤولية رسمية عن قيادة الآخرين</option>
+    <option value="professional_project_lead">أقود مهنيًا أو أنسّق عملًا أو مشروعًا دون إدارة مباشرة لفريق</option>
+    <option value="team_lead">أقود فريقًا وأتحمل مسؤولية مباشرة عن أدائه</option>
+    <option value="unit_department_manager">أدير وحدة أو قسمًا وأتحمل مسؤولية عن نطاق عمل متكامل</option>
+    <option value="multi_unit_function_lead">أقود عدة وحدات أو أقسام أو نطاقًا وظيفيًا أو تشغيليًا واسعًا</option>
+    <option value="executive_leadership">أعمل ضمن القيادة التنفيذية وأشارك في القرارات على مستوى المؤسسة</option>
+    <option value="other">أخرى</option>
+   </select>
   </label>
   <label>سنوات الخبرة
    <select id="experienceBand"><option value="">اختر إن رغبت</option><option value="lt2">أقل من سنتين</option><option value="2_5">2–5 سنوات</option><option value="6_10">6–10 سنوات</option><option value="11_20">11–20 سنة</option><option value="gt20">أكثر من 20 سنة</option></select>
   </label>
-  <label>القطاع / المجال<input id="industry" placeholder="مثال: صحة، تعليم، تقنية"></label>
+  <label>القطاع
+   <select id="industry">
+    <option value="">اختر إن رغبت</option>
+    <option value="healthcare">الصحة</option>
+    <option value="education">التعليم</option>
+    <option value="government_public_services">الحكومة والخدمات العامة</option>
+    <option value="energy_utilities">الطاقة والمرافق</option>
+    <option value="aviation_transport_logistics">الطيران والنقل والخدمات اللوجستية</option>
+    <option value="financial_services">الخدمات المالية والمصرفية والتأمين</option>
+    <option value="technology_telecom">التقنية والاتصالات</option>
+    <option value="tourism_hospitality">السياحة والضيافة</option>
+    <option value="real_estate_construction">العقارات والإنشاءات</option>
+    <option value="retail_trade">التجزئة والتجارة</option>
+    <option value="professional_services">الاستشارات والخدمات المهنية</option>
+    <option value="manufacturing_industry">الصناعة والتصنيع</option>
+    <option value="social_community_services">الخدمات الاجتماعية والمجتمعية</option>
+    <option value="other">أخرى</option>
+   </select>
+  </label>
   <label>اللغة الأكثر استخدامًا في العمل
    <select id="primaryLanguage"><option value="">اختر إن رغبت</option><option value="ar">العربية</option><option value="en">الإنجليزية</option><option value="ar_en">العربية والإنجليزية</option><option value="other">أخرى</option></select>
   </label>
@@ -212,7 +240,7 @@ html[dir="ltr"] .af-flex-note{text-align:left}
    <select id="ageBand"><option value="">اختر إن رغبت</option><option value="lt25">أقل من 25</option><option value="25_34">25–34</option><option value="35_44">35–44</option><option value="45_54">45–54</option><option value="55_plus">55 فأكثر</option><option value="prefer_not">أفضل عدم الإجابة</option></select>
   </label>
   <label>الجنس
-   <select id="gender"><option value="">اختر إن رغبت</option><option value="female">أنثى</option><option value="male">ذكر</option><option value="self_describe">أخرى / وصف ذاتي</option><option value="prefer_not">أفضل عدم الإجابة</option></select>
+   <select id="gender"><option value="">اختر إن رغبت</option><option value="female">أنثى</option><option value="male">ذكر</option></select>
   </label>
  </div>
  
@@ -261,7 +289,7 @@ const RESEARCH_CONFIG={
  scoringVersion:'pilot-pairwise-1',
  assessmentLanguage:'ar',
  adaptationVersion:'AR-source-v1',
- administrationVersion:'15.0-two-report-prototype',
+ administrationVersion:'15.3-scope-of-responsibility',
  // ضع هنا لاحقًا endpoint آمنًا (Supabase / Apps Script / Serverless / Formspree).
  endpoint:(window.WPF_RESEARCH_ENDPOINT||''),
  autoSubmit:true,
@@ -275,8 +303,8 @@ function blankResearch(){return{
 let state={phase:'pref',qi:0,ni:0,fi:0,prefs:{},needs:{},flex:{},orders:{},name:'',role:'',started:false,research:blankResearch()};
 function shuffle(a){let x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
 function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');clearTimeout(window._t);window._t=setTimeout(()=>e.classList.remove('show'),1600)}
-function save(){try{localStorage.setItem('wpf_v15_ar_state',JSON.stringify(state))}catch(e){}}
-function load(){try{const x=JSON.parse(localStorage.getItem('wpf_v15_ar_state'));if(x&&x.prefs)state={...state,...x,research:{...blankResearch(),...(x.research||{})}}}catch(e){}}
+function save(){try{localStorage.setItem('wpf_v15_3_ar_state',JSON.stringify(state))}catch(e){}}
+function load(){try{const x=JSON.parse(localStorage.getItem('wpf_v15_3_ar_state'));if(x&&x.prefs)state={...state,...x,research:{...blankResearch(),...(x.research||{})}}}catch(e){}}
 function itemKey(){if(state.phase==='pref'){let q=DATA.questions[state.qi];return q?'P:Q'+q.n:null}if(state.phase==='need'){let n=DATA.needs[state.ni];return n?'N:'+n.id:null}let f=DATA.flex[state.fi];return f?'F:'+f.id:null}
 function itemOrderForKey(key){if(!key)return[];if(key.startsWith('P:Q'))return state.orders[key.slice(2)]||[];if(key.startsWith('N:'))return state.orders['N'+key.slice(2)]||[];if(key.startsWith('F:'))return state.orders['F'+key.slice(2)]||[];return[]}
 function closeActiveMetric(){
@@ -488,10 +516,10 @@ function start(){
  logEvent('assessment_started',{consent:state.research.consent});
  ensureOrders();save();show('#assessment');render()
 }
-function reset(){if(!confirm('هل تريد حذف الإجابات وإعادة التقييم؟'))return;try{localStorage.removeItem('wpf_v15_ar_state')}catch(e){}location.reload()}
+function reset(){if(!confirm('هل تريد حذف الإجابات وإعادة التقييم؟'))return;try{localStorage.removeItem('wpf_v15_3_ar_state')}catch(e){}location.reload()}
 load();ensureOrders();$('#name').value=state.name||'';$('#role').value=state.role||'';
 if($('#coachShareConsent'))$('#coachShareConsent').checked=!!state.coachShareConsent;$('#studyCode').value=state.research.studyCode||'';$('#retestCode').value=state.research.retestCode||'';$('#researchConsent').checked=!!state.research.consent;
 let dg=state.research.demographics||{};['roleLevel','experienceBand','primaryLanguage','ageBand','gender'].forEach(k=>{if($('#'+k))$('#'+k).value=dg[k]||''});if($('#industry'))$('#industry').value=dg.industry||'';
-$('#howStart').onclick=()=>{$('#startBox').scrollIntoView({behavior:'smooth'})};$('#goStart').onclick=()=>$('#startBox').scrollIntoView({behavior:'smooth',block:'center'});$('#seeHow').onclick=()=>$('#how').scrollIntoView({behavior:'smooth'});$('#previewReport').onclick=previewDemo;$('#start').onclick=start;$('#next').onclick=next;$('#back').onclick=back;$('#mapBtn').onclick=()=>scrollTo({top:0,behavior:'smooth'});$$('.tabs button').forEach(b=>b.onclick=()=>activate(b.dataset.tab));$('#print').onclick=()=>print();$('#export').onclick=exportData;$('#exportCsv').onclick=exportCsv;$('#restart').onclick=reset;$('#coach').onclick=()=>$('#coachModal').classList.add('open');$$('[data-close]').forEach(b=>b.onclick=()=>$('#coachModal').classList.remove('open'));$('#copyCoach').onclick=async()=>{try{await navigator.clipboard.writeText($('#coachQ').textContent);toast('تم نسخ السؤال ✓')}catch(e){toast('انسخ السؤال يدويًا')}};$('#copyShare').onclick=async()=>{let t=$('#shareTitle').textContent+'\n'+[...$('#shareList').querySelectorAll('li')].map(x=>'• '+x.textContent).join('\n');try{await navigator.clipboard.writeText(t);toast('تم نسخ البطاقة ✓')}catch(e){toast('انسخ البطاقة يدويًا')}};
+$('#goStart').onclick=()=>$('#startBox').scrollIntoView({behavior:'smooth',block:'center'});$('#seeHow').onclick=()=>$('#how').scrollIntoView({behavior:'smooth'});$('#previewReport').onclick=previewDemo;$('#start').onclick=start;$('#next').onclick=next;$('#back').onclick=back;$('#mapBtn').onclick=()=>scrollTo({top:0,behavior:'smooth'});$$('.tabs button').forEach(b=>b.onclick=()=>activate(b.dataset.tab));$('#print').onclick=()=>print();$('#export').onclick=exportData;$('#exportCsv').onclick=exportCsv;$('#restart').onclick=reset;$('#coach').onclick=()=>$('#coachModal').classList.add('open');$$('[data-close]').forEach(b=>b.onclick=()=>$('#coachModal').classList.remove('open'));$('#copyCoach').onclick=async()=>{try{await navigator.clipboard.writeText($('#coachQ').textContent);toast('تم نسخ السؤال ✓')}catch(e){toast('انسخ السؤال يدويًا')}};$('#copyShare').onclick=async()=>{let t=$('#shareTitle').textContent+'\n'+[...$('#shareList').querySelectorAll('li')].map(x=>'• '+x.textContent).join('\n');try{await navigator.clipboard.writeText(t);toast('تم نسخ البطاقة ✓')}catch(e){toast('انسخ البطاقة يدويًا')}};
 </script>
 </body></html>

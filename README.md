@@ -1,14 +1,78 @@
-# Work Preference & Flex — V8 Trade-off Pilot
+# Work Preference & Flex — V15.3
 
-## Design
-- Stage 1: 40 work-preference triads ranked 3–2–1.
-- Stage 2: 9 environment-needs trade-off blocks ranked 4–3–2–1. Six need dimensions each appear in six blocks; pair coverage is approximately balanced.
-- Stage 3: 8 contextual SJT items with one most-likely response.
-- Participant-facing report emphasizes story, top-two blend, four color pages, top environment needs, preference–need comparisons, context, a shareable “How to work with me” card, and an action plan.
-- Colors and scoring keys are hidden during assessment.
+Bilingual Arabic/English research prototype for:
 
-## Psychometric status
-Research prototype only. Preference and need scores use temporary pairwise relative-priority indices. They are not norms, percentiles, or IRT estimates. Before operational use: content review, cognitive interviews, desirability/transparency study, calibration, structural validation, test–retest, criterion validity, DIF/invariance, and independent replication.
+- Work Preferences
+- Environment Needs
+- Contextual Flex
+- Participant Report
+- Private Coach Report prototype
 
-## Deployment
-`index.html` is standalone and can be opened locally or uploaded directly to GitHub Pages / Netlify / Vercel. No external assets or API keys are required.
+## Files
+
+Upload all of these files to the **root** of the GitHub repository:
+
+- `index.html`
+- `ar.html`
+- `en.html`
+- `coach.html`
+- `README.md`
+
+## GitHub Pages
+
+The public landing page is:
+
+`/index.html`
+
+Arabic assessment:
+
+`/ar.html`
+
+English assessment:
+
+`/en.html`
+
+Coach prototype:
+
+`/coach.html`
+
+## Current participant-profile design
+
+The participant profile includes:
+
+- Name (optional)
+- Job title or professional role (optional)
+- Current scope of responsibility
+- Years of experience
+- Sector, starting with Healthcare then Education
+- Primary work language
+- Age group
+- Gender: Female / Male
+
+The scope-of-responsibility field is based on actual responsibility rather than job title.
+
+## Important research status
+
+This is a research/development prototype. It is intended for coaching, leadership development, communication, and team-development contexts.
+
+It is **not validated for hiring, selection, promotion, termination, or other high-stakes employment decisions**.
+
+Preference, Environment Need, Capability, Behavior, and Outcome are treated as distinct concepts.
+
+The color system is a communication/navigation layer, not a validated typology.
+
+## Coach report prototype
+
+`coach.html` is a static prototype.
+
+Because the site is currently hosted on GitHub Pages:
+
+- the password gate is not production-grade authentication;
+- coach-report records saved in browser storage are only available on the same browser/device;
+- a real multi-user implementation requires a secure backend/database and server-side authentication.
+
+Do not place API keys, database secrets, or other credentials in these GitHub files.
+
+## Version
+
+Current administration version: **V15.3 — Scope of Responsibility**

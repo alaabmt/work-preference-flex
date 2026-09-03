@@ -1,12 +1,9 @@
-# V17 Change Log
+# V17.2
 
-- Rebuilt from V16.1 code fixes rather than patching the old four-color scoring model.
-- Retired old `Follow-through & Closure` as a core Structure facet.
-- Replaced the old Action & Adaptability composite with a narrower Starting Action candidate orientation.
-- Moved Adaptive Adjustment into contextual response/Flex.
-- Reframed Connection & Collaboration as a separate Working with Others / Social Coordination focus.
-- Rewrote the preference bank as 30 triads aligned to the three candidate core orientations.
-- Rewrote bilingual text with Arabic authored as native Arabic rather than literal translation.
-- Kept participant code system AL001+ and added code confirmation.
-- Preserved same-device retest linkage and deterministic form assembly.
-- Kept coach dashboard separate and clearly labelled as a static prototype.
+- Rebuilt participant report for clarity and usefulness.
+- Removed arbitrary close-score/co-lead message from participant report.
+- Removed participant-facing numeric relative indices.
+- Added plain-language interpretation of Understanding, Structuring, and Starting Action.
+- Rewrote Social Coordination report in direct descriptive language.
+- Rewrote contextual response report using matched-situation sentences rather than technical tables.
+- Simplified SO02, SO05, SO06, SO09 in Arabic and English.

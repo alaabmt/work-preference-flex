@@ -1,9 +1,6 @@
-# خطوات الرفع إلى GitHub Pages — V17.1
+# Deploy V17.2
 
-1. افتح المستودع `work-preference-flex`.
-2. احذف ملفات النسخة السابقة أو استبدلها.
-3. ارفع **كل الملفات الموجودة في هذه الحزمة إلى جذر المستودع**.
-4. تأكد أن `index.html` و`ar.html` و`en.html` و`coach.html` تظهر مباشرة في الصفحة الرئيسية للمستودع، وليس داخل مجلد آخر.
-5. انتظر نشر GitHub Pages، ثم افتح الصفحة في نافذة خاصة/Incognito لتجنب cache النسخة السابقة.
-
-لا يوجد مجلد `assets` مطلوب في هذه النسخة.
+1. Replace the current repository-root files with the files in this package.
+2. Keep `index.html`, `ar.html`, `en.html`, and `coach.html` in the repository root.
+3. Commit to `main`.
+4. Wait for GitHub Pages deployment, then open the site in a private/incognito window.

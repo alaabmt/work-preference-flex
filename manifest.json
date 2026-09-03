@@ -1,22 +1,14 @@
 {
-  "deployBuild": "17.1-standalone",
-  "scientificBankVersion": "17.0-theory-aligned-pilot",
-  "blueprintVersion": "17.0-core3-socialfocus-needs6-flexpairs4",
-  "runtimeDependencies": [],
+  "deployBuild": "17.2-clear-report",
   "participantPagesSelfContained": true,
-  "coachPageSelfContained": true,
-  "requiredDeployFiles": [
-    "index.html",
-    "ar.html",
-    "en.html",
-    "coach.html"
-  ],
-  "auditFiles": [
-    "item-bank.json",
-    "README.md",
-    "DEPLOY_TO_GITHUB.md",
-    "technical-notes.md",
-    "language-review.md",
-    "CHANGELOG.md"
+  "runtimeDependencies": [],
+  "scientificBankVersion": "17.0-theory-aligned-pilot",
+  "displayVersion": "17.2",
+  "blueprintVersion": "17.0-core3-socialfocus-needs6-flexpairs4",
+  "changedItems": [
+    "SO02",
+    "SO05",
+    "SO06",
+    "SO09"
   ]
 }

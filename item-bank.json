@@ -8,7 +8,9 @@
     "status": "research_pilot_not_validated",
     "generated": "2026-09-03",
     "theoreticalBackbone": "Action Regulation Theory; Person–Environment Fit for environment layer; person–situation interactionism for contextual adaptation",
-    "scoringNote": "Preference indices are ipsative/relative pilot indices, not norms or percentiles. Social focus and Flex are reported descriptively."
+    "scoringNote": "Preference indices are ipsative/relative pilot indices, not norms or percentiles. Social focus and Flex are reported descriptively.",
+    "displayVersion": "17.2",
+    "languageRevision": "17.2-plain-language-report-and-social-items"
   },
   "constructs": {
     "U": {
@@ -1173,22 +1175,22 @@
       "status": "pilot",
       "process": "understanding",
       "stem": {
-        "ar": "يعطي مصدران داخليان تفسيرين مختلفين للمشكلة نفسها. أي طريقة تميل إلى استخدامها أكثر للوصول إلى فهم مشترك؟",
-        "en": "Two internal sources give different explanations for the same issue. Which approach are you more likely to use to reach a workable understanding?"
+        "ar": "يقدم فريقان تفسيرين مختلفين للمشكلة نفسها. ما الطريقة الأقرب لك لفهم سبب الاختلاف؟",
+        "en": "Two teams give different explanations for the same work problem. How are you more likely to make sense of the difference?"
       },
       "options": [
         {
           "code": "TASK",
           "text": {
-            "ar": "أقارن التعريفات والبيانات المستخدمة في كل مصدر لأحدد أين بدأ الاختلاف.",
-            "en": "Compare the definitions and data used in each source to locate where the difference begins."
+            "ar": "أقارن المعلومات التي يعتمد عليها كل فريق لأعرف أين بدأ اختلاف التفسير.",
+            "en": "Compare the information each team is using to see where their explanations start to differ."
           }
         },
         {
           "code": "SOC",
           "text": {
-            "ar": "أناقش مثالًا واحدًا مع المسؤولين عن المصدرين حتى نعرف أين يختلف الفهم أو التطبيق.",
-            "en": "Review one example with the people responsible for both sources to see where their interpretation or application differs."
+            "ar": "أناقش مثالًا عمليًا واحدًا مع أشخاص من الفريقين لأفهم كيف يرى كل فريق المشكلة.",
+            "en": "Discuss one real example with people from both teams to understand how each team is seeing the issue."
           }
         }
       ]
@@ -1251,22 +1253,22 @@
       "status": "pilot",
       "process": "structuring",
       "stem": {
-        "ar": "تحدث أخطاء متكررة عندما ينتقل العمل من فريق إلى آخر. أي طريقة تميل إلى استخدامها أكثر لتنظيم عملية الانتقال؟",
-        "en": "Errors keep happening when work moves from one team to another. Which approach are you more likely to use to structure the handoff?"
+        "ar": "تتكرر الأخطاء أو حالات سوء الفهم عندما ينتقل العمل من فريق إلى آخر. ما الطريقة الأقرب لك لجعل الانتقال أوضح؟",
+        "en": "Errors or misunderstandings keep happening when work passes from one team to another. Which approach are you more likely to use to make the transition clearer?"
       },
       "options": [
         {
           "code": "TASK",
           "text": {
-            "ar": "أحدد متطلبات واضحة لما يجب أن يكون مكتملًا قبل انتقال العمل إلى الفريق التالي.",
-            "en": "Define clear requirements for what must be complete before the work moves to the next team."
+            "ar": "أحدد ما الذي يجب أن يكتمل قبل انتقال العمل إلى الفريق التالي.",
+            "en": "Define what must be complete before the work moves to the next team."
           }
         },
         {
           "code": "SOC",
           "text": {
-            "ar": "أتفق مع الفريقين على ما يحتاجه الطرف المستلم وكيف سنعرف أن الانتقال تم بصورة سليمة.",
-            "en": "Work with both teams to agree what the receiving side needs and how we will know the handoff is complete."
+            "ar": "أتفق مع الفريقين على ما يحتاجه الفريق المستلم ومتى نعتبر انتقال العمل مكتملًا.",
+            "en": "Agree with both teams on what the receiving team needs and what a complete handover looks like."
           }
         }
       ]
@@ -1277,22 +1279,22 @@
       "status": "pilot",
       "process": "structuring",
       "stem": {
-        "ar": "هناك عدة أولويات متنافسة في عمل مشترك. أي طريقة تميل إلى استخدامها أكثر لترتيبها؟",
-        "en": "Several priorities are competing in a shared piece of work. Which approach are you more likely to use to rank them?"
+        "ar": "تتنافس عدة طلبات على الأولوية في عمل تشترك فيه أكثر من جهة. ما الطريقة الأقرب لك لتحديد ما يأتي أولًا؟",
+        "en": "Several requests are competing for priority in work shared by more than one group. How are you more likely to decide what comes first?"
       },
       "options": [
         {
           "code": "TASK",
           "text": {
-            "ar": "أطبق معايير واضحة للأولوية على الطلبات الموجودة.",
-            "en": "Apply clear priority criteria to the requests on the table."
+            "ar": "أستخدم معايير واضحة لترتيب الطلبات حسب الأولوية.",
+            "en": "Use clear priority criteria to rank the requests."
           }
         },
         {
           "code": "SOC",
           "text": {
-            "ar": "أعمل مع الأطراف الأساسية على معايير مشتركة ثم نرتب الأولويات على أساسها.",
-            "en": "Work with the key parties on shared criteria and then rank the priorities against them."
+            "ar": "أتفق مع الجهات الأساسية على معايير الأولوية ثم نرتب الطلبات على أساسها.",
+            "en": "Agree on priority criteria with the key groups, then rank the requests using those criteria."
           }
         }
       ]
@@ -1355,22 +1357,22 @@
       "status": "pilot",
       "process": "action",
       "stem": {
-        "ar": "تنقل جزءًا من عملك إلى شخص آخر، ويمكنك إما إعطاؤه المعلومات اللازمة مباشرة أو قضاء وقت قصير معه في البداية. أي طريقة تميل إلى استخدامها أكثر؟",
-        "en": "You are transferring part of your work to someone else. You could either give them the essential information directly or spend a short time working through it together. Which approach are you more likely to use?"
+        "ar": "ستنقل جزءًا من عملك إلى شخص آخر. ما الطريقة الأقرب لك لبدء الانتقال؟",
+        "en": "You are handing part of your work over to someone else. Which approach are you more likely to use to get the handover started?"
       },
       "options": [
         {
           "code": "TASK",
           "text": {
             "ar": "أعطيه نطاق العمل والمعلومات الأساسية ثم أبدأ نقل الجزء المتفق عليه.",
-            "en": "Give them the scope and essential information, then begin the agreed transfer."
+            "en": "Give them the scope and essential information, then begin the agreed handover."
           }
         },
         {
           "code": "SOC",
           "text": {
-            "ar": "أبدأ معه بمراجعة قصيرة للعمل ثم ننقل الجزء المتفق عليه معًا.",
-            "en": "Start with a short walkthrough together, then transfer the agreed part."
+            "ar": "أقضي معه وقتًا قصيرًا في مراجعة العمل معًا قبل أن أنقل الجزء المتفق عليه.",
+            "en": "Spend a short time going through the work together before handing over the agreed part."
           }
         }
       ]

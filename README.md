@@ -1,17 +1,12 @@
-# Work Preference & Flex — V17.1 Standalone GitHub Pages Build
+# Work Preference & Flex — V17.2
 
-هذه النسخة صُممت خصيصًا للرفع المباشر إلى GitHub Pages بدون الاعتماد على مجلد `assets` أو تحميل JavaScript/CSS/JSON من ملفات خارجية.
+Standalone GitHub Pages build. Participant pages are self-contained.
 
-## ملفات التشغيل
-- `index.html` — الصفحة الرئيسية
-- `ar.html` — التقييم العربي؛ CSS + JavaScript + بنك البنود + صورة العربية مضمنة داخل الصفحة
-- `en.html` — التقييم الإنجليزي؛ CSS + JavaScript + بنك البنود + صورة الإنجليزية مضمنة داخل الصفحة
-- `coach.html` — لوحة الكوتش؛ CSS وJavaScript مضمنان
-- `item-bank.json` — نسخة قابلة للتدقيق من بنك البنود، وليست مطلوبة لتشغيل الصفحتين
+## Main changes
+- Participant report rewritten in plain, explanatory Arabic and English.
+- Removed participant-facing numeric preference scores from the report.
+- Report now explains each orientation, when it may help, and what to watch for without treating a lower ranking as weakness.
+- Social Coordination and contextual-response sections rewritten as direct descriptive statements.
+- Social items SO02, SO05, SO06, and SO09 simplified in both languages.
 
-## لماذا هذه النسخة؟
-في اللقطة المنشورة ظهرت الصفحة دون تنسيق وبقيت على Loading، وهو نمط يتوافق مع عدم تحميل ملفات CSS وJavaScript الخارجية. هذه النسخة تلغي هذه نقطة الفشل: صفحات التشغيل ذاتية الاكتفاء.
-
-## GitHub Pages
-ارفع الملفات الموجودة هنا إلى جذر المستودع بحيث يكون `index.html` في المستوى الأول. لا تحتاج إلى إنشاء مجلد `assets`.
-v17.1
+Upload all files in this folder to the repository root.

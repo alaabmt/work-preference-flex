@@ -1,26 +1,9 @@
-# GitHub Pages deployment — V17
+# خطوات الرفع إلى GitHub Pages — V17.1
 
-This package is prepared so that **index.html is at the repository root**.
+1. افتح المستودع `work-preference-flex`.
+2. احذف ملفات النسخة السابقة أو استبدلها.
+3. ارفع **كل الملفات الموجودة في هذه الحزمة إلى جذر المستودع**.
+4. تأكد أن `index.html` و`ar.html` و`en.html` و`coach.html` تظهر مباشرة في الصفحة الرئيسية للمستودع، وليس داخل مجلد آخر.
+5. انتظر نشر GitHub Pages، ثم افتح الصفحة في نافذة خاصة/Incognito لتجنب cache النسخة السابقة.
 
-## Upload
-1. Open the GitHub repository.
-2. Remove/replace the previous site files that this version supersedes.
-3. Upload **all files and the `assets` folder from this package root**.
-4. Commit the changes.
-5. In **Settings → Pages**, publish from the intended branch and `/ (root)`.
-6. Open the Pages URL and hard-refresh once after deployment.
-
-## Required runtime files
-Do not omit any of these:
-- `index.html`
-- `ar.html`
-- `en.html`
-- `coach.html`
-- `item-bank.json`
-- `assets/app.js`
-- `assets/app.css`
-- `assets/coach.js`
-- `assets/workplace_response_decision_map.png`
-- `assets/how_do_you_respond_at_work.png`
-
-The Markdown documentation files are not required for runtime but are included for version control and research documentation.
+لا يوجد مجلد `assets` مطلوب في هذه النسخة.

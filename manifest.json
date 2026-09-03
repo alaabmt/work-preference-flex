@@ -1,0 +1,28 @@
+{
+  "version": "17.0-theory-aligned-pilot-github-root-ready",
+  "deployment": "GitHub Pages repository root",
+  "files": {
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CHANGELOG.md": "c129ef31888a4279a9c5bb342a1eaf273460436702ac82da2e2974b6fb0c5279",
+    "DEPLOY_TO_GITHUB.md": "d550f1bcdff84c68be68d7bdf8a8f66c85439e5e65e40f9134603955d8479c57",
+    "README.md": "77689361da7d75c64d966c3d51b1a32157861c114649e7ef5fc0ba2cfce6e512",
+    "ar.html": "6a4a0b5e709abc9856d75825867c89e8f4d9d9afb7fb322fc7a4960e218585d1",
+    "assets/app.css": "8c123ee148e3b94a3c366efd1c030b7472455bdded721b5757b1fd847440cd4a",
+    "assets/app.js": "880c9269e581276fdb57803967879a6e379d28b67b1b3bdd247a3b1f820a264f",
+    "assets/coach.js": "15f642c34aae2efb25167662ffbd42d33c45e272d151e97a2d4cb215c7a83b77",
+    "assets/how_do_you_respond_at_work.png": "82cc4e8b3f96f052dbff55f8a5f9b2a70159bdd8064157d59c0d999f36d6366e",
+    "assets/workplace_response_decision_map.png": "b85f77434333ec548f8c2cc29288494b7edb9252603079d513d4553324f4c74a",
+    "coach.html": "f6d1aead88679246bdac5c68827e010090f8daf90bb1059d65b44d87bc58dad4",
+    "en.html": "33d799dffd0d853555b59f2208c1e757f2bf05e784bb69c40cf4d9fb65f5fb81",
+    "index.html": "b1c54bb135b3422ae87678c364022330c40a8a563ec164455f2c17c374c37a4a",
+    "item-bank.json": "80a9f34046de33a7626d49d6bb54b4c3af1ec9c1bf2bb9542604f3e41b01f51f",
+    "language-review.md": "11681bfeb4abfb4b907914cfb5552f632981773e36b785f728135e405686597e",
+    "technical-notes.md": "9d9041f3084a21ddafed6897fb881ef1a562997f6959e8ae60d4bfcb477ab9e0"
+  },
+  "counts": {
+    "preference": 30,
+    "social": 9,
+    "needs": 9,
+    "flex": 8
+  }
+}

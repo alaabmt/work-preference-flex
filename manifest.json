@@ -1,14 +1,38 @@
 {
-  "deployBuild": "17.2-clear-report",
-  "participantPagesSelfContained": true,
-  "runtimeDependencies": [],
+  "instrument": "Work Preference & Flex",
+  "deployBuild": "17.4-rich-report",
+  "displayVersion": "17.4",
   "scientificBankVersion": "17.0-theory-aligned-pilot",
-  "displayVersion": "17.2",
   "blueprintVersion": "17.0-core3-socialfocus-needs6-flexpairs4",
-  "changedItems": [
-    "SO02",
-    "SO05",
-    "SO06",
-    "SO09"
+  "languageAdaptationVersion": "17.0-ar-en-conceptual",
+  "participantPagesSelfContained": true,
+  "runtimeExternalDependencies": [],
+  "sections": {
+    "preference": 30,
+    "social": 9,
+    "environmentNeeds": 9,
+    "flex": 8
+  },
+  "totalAssessmentScreens": 56,
+  "contentStatus": "research_pilot_not_validated",
+  "clarityEditsThisBuild": [],
+  "rtlArabic": true,
+  "ltrEnglish": true,
+  "participantReport": {
+    "format": "10-section color-guided rich report",
+    "coreRelativeIndicators": "0-100 within-profile, non-normative",
+    "socialCoordinationIndicator": "0-100 descriptive, separate from core orientations",
+    "environmentNeedIndicators": "0-100 relative within needs section, non-normative",
+    "flexScoring": "no correctness/flex score; matched-pair contextual interpretation",
+    "print": "A4 page-break optimized; approximately 10 pages depending browser scaling"
+  },
+  "reportEditsThisBuild": [
+    "10-page participant report",
+    "colored numerical profile",
+    "full core-orientation explanations",
+    "social coordination page",
+    "all six environment needs with relative indices",
+    "matched-context Flex interpretation",
+    "development/coaching map"
   ]
 }

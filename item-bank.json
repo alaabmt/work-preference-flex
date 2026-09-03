@@ -8,9 +8,9 @@
     "status": "research_pilot_not_validated",
     "generated": "2026-09-03",
     "theoreticalBackbone": "Action Regulation Theory; Person–Environment Fit for environment layer; person–situation interactionism for contextual adaptation",
-    "scoringNote": "Preference indices are ipsative/relative pilot indices, not norms or percentiles. Social focus and Flex are reported descriptively.",
-    "displayVersion": "17.2",
-    "languageRevision": "17.2-plain-language-report-and-social-items"
+    "scoringNote": "Core and environment indicators are relative/ipsative pilot indices, not norms or percentiles. Social coordination is descriptive. Flex is interpreted from matched contextual response shifts, not a correctness score.",
+    "displayVersion": "17.4",
+    "languageRevision": "17.4-rich-report-bilingual"
   },
   "constructs": {
     "U": {
@@ -247,8 +247,8 @@
       "status": "pilot",
       "context": "co_leading",
       "stem": {
-        "ar": "ستقود عملًا مشتركًا مع شخص آخر، ووقت التحضير محدود. ما الذي تميل إلى إعطائه الأولوية قبل البدء؟",
-        "en": "You are co-leading a piece of work with someone else, and preparation time is limited. What do you tend to prioritize before starting?"
+        "ar": "ستتشارك مع شخص آخر في قيادة عمل، ووقت التحضير محدود. ما الذي تميل إلى إعطائه الأولوية قبل البدء؟",
+        "en": "You will share responsibility for leading a work assignment with someone else, and preparation time is limited. What do you tend to prioritize before starting?"
       },
       "options": [
         {
@@ -716,7 +716,7 @@
       "context": "conditions_change",
       "stem": {
         "ar": "كانت الخطة مناسبة في البداية، لكن ظروف العمل تغيّرت أثناء التنفيذ. ما الذي تميل إلى إعطائه الأولوية؟",
-        "en": "The original plan made sense, but conditions change during delivery. What do you tend to prioritize?"
+        "en": "The original plan made sense, but conditions change during implementation. What do you tend to prioritize?"
       },
       "options": [
         {
@@ -1268,7 +1268,7 @@
           "code": "SOC",
           "text": {
             "ar": "أتفق مع الفريقين على ما يحتاجه الفريق المستلم ومتى نعتبر انتقال العمل مكتملًا.",
-            "en": "Agree with both teams on what the receiving team needs and what a complete handover looks like."
+            "en": "Agree with both teams on what the receiving team needs and what a complete transfer looks like."
           }
         }
       ]
@@ -1358,21 +1358,21 @@
       "process": "action",
       "stem": {
         "ar": "ستنقل جزءًا من عملك إلى شخص آخر. ما الطريقة الأقرب لك لبدء الانتقال؟",
-        "en": "You are handing part of your work over to someone else. Which approach are you more likely to use to get the handover started?"
+        "en": "You are transferring part of your work to someone else. Which approach are you more likely to use to begin the transition?"
       },
       "options": [
         {
           "code": "TASK",
           "text": {
             "ar": "أعطيه نطاق العمل والمعلومات الأساسية ثم أبدأ نقل الجزء المتفق عليه.",
-            "en": "Give them the scope and essential information, then begin the agreed handover."
+            "en": "Give them the scope and essential information, then transfer the agreed part."
           }
         },
         {
           "code": "SOC",
           "text": {
             "ar": "أقضي معه وقتًا قصيرًا في مراجعة العمل معًا قبل أن أنقل الجزء المتفق عليه.",
-            "en": "Spend a short time going through the work together before handing over the agreed part."
+            "en": "Spend a short time reviewing the work together before transferring the agreed part."
           }
         }
       ]
@@ -1657,8 +1657,8 @@
       "section": "needs",
       "status": "pilot",
       "stem": {
-        "ar": "تعمل مع فريق جديد ولا تعرف بعد كيف تُتخذ القرارات أو تُدار التغييرات. رتّب ما سيمنحك أكبر قدر من الوضوح للعمل بفعالية.",
-        "en": "You are working with a new team and do not yet know how decisions and changes are handled. Rank what would give you the most confidence to work effectively."
+        "ar": "تعمل مع فريق جديد ولا تعرف بعد كيف تُتخذ القرارات أو تُدار التغييرات. رتّب ما سيساعدك أكثر على العمل بثقة وفعالية.",
+        "en": "You are working with a new team and do not yet know how decisions and changes are handled. Rank what would help you work most confidently and effectively."
       },
       "options": [
         {

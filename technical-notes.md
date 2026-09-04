@@ -1,4 +1,4 @@
-# Technical Notes — V17.4 Rich Report
+# Technical Notes — V17.5 Report Architecture
 
 ## Measurement architecture
 
@@ -18,3 +18,7 @@ The report repeatedly distinguishes preference from ability, performance, enviro
 ## Print
 
 The rich report uses A4 page-break rules and ten report sections. Browser PDF output may vary slightly with font rendering and print scale.
+
+
+## V17.5 reporting semantics
+Participant-facing core indices remain transformations of forced-ranking results and are not normative trait estimates. The visual report therefore omits `/100` and uses 50 only as an internal scoring-format reference, explicitly not a population mean. Social Coordination is reported descriptively as counts across the nine sampled social situations. Environment Needs prioritize rank order; numeric indices are secondary descriptive summaries. Flex is shown at the paired-context level without a total Flex score or a participant-facing shift-count headline.

@@ -1,3 +1,4 @@
-V17.4 RICH REPORT
-Generated: 2026-09-03
-Scientific item bank: 17.0-theory-aligned-pilot
+V17.5 REPORT ARCHITECTURE
+Generated 2026-09-04
+Base: V17.4 Rich Report
+Participant report language, scoring display, Social/Needs/Flex presentation, and coaching-map revision.

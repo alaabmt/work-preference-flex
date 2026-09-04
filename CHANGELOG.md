@@ -1,3 +1,14 @@
+
+## V17.5 — Participant Report Architecture
+- Simplified participant-facing terminology in Arabic and English.
+- Removed `/100` from Core report scores; reframed as Response Priority Index.
+- Kept Page/Section 6 visual sequence but clarified it represents response priority order, not a fixed behavioral sequence.
+- Replaced Social Coordination 0–100 hero score with direct situation counts and process breakdown.
+- Made Environment Needs rank-first and revised coaching questions to avoid mixing needs with capability.
+- Removed Flex shift-count headline and neutralized visual treatment of shifted vs consistent responses.
+- Rebuilt the Development & Coaching section around real evidence, context, fit, impact, and experiment rather than the lowest score.
+- Report pages are labeled Sections until browser/PDF pagination is verified.
+
 # Changelog
 
 ## V17.4 — Rich Report

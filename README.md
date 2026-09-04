@@ -1,4 +1,4 @@
-# Work Preference & Flex — V17.4 Rich Report
+# Work Preference & Flex — V17.5 Report Architecture
 
 This folder is ready to upload to the **root of a GitHub Pages repository**. `index.html` is at the root.
 
@@ -18,3 +18,12 @@ This is a **research pilot under validation**, not a diagnostic instrument and n
 ## GitHub Pages
 
 Upload the contents of this folder directly to the repository root. Then use **Settings → Pages → Deploy from a branch → main → /(root)**.
+
+## V17.5 participant-report revision
+- Plain participant language: avoids orientation/tendency/prominent/less-relative phrasing.
+- Core results keep numeric indices but remove /100 semantics and use a within-response reference marker.
+- Page 6 retains a visual priority sequence while stating that it is not a fixed behavioral sequence.
+- Social Coordination is reported as selected situations (e.g., 6/9), not as a 0–100 hero score.
+- Environment Needs are rank-first; indices are secondary.
+- Flex is factor-by-factor, with no shift-count headline and no visual reward for changing.
+- Development experiment is no longer selected from the lowest core result.

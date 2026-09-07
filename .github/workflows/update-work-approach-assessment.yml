@@ -27,7 +27,6 @@ jobs:
               Path('item-bank.json'),
           ]
 
-          # Product name: assessment name is distinct from the report name.
           replacements = {
               'Your Work Approach Profile': 'Work Approach Assessment',
               'ملف أسلوبك في العمل': 'تقييم أسلوب العمل',
@@ -42,20 +41,20 @@ jobs:
               for old, new in replacements.items():
                   text = text.replace(old, new)
 
-              # Participant start screen: remove the construct-by-construct explanation
-              # and replace it with the concise value proposition agreed for both languages.
               old_notice = "<div class=\"notice warn\">${rtl?'النسخة V17.5 بحثية تجريبية ومبنية على النموذج النظري المحدّث. يستكشف التقييم ثلاث طرق أساسية للتعامل مع مواقف العمل: فهم الموقف، تنظيم العمل، وبدء العمل. ويُعرض التنسيق مع الآخرين بصورة منفصلة، بينما نقرأ أثر السياق من تغير الاختيارات عبر المواقف.':'V17.5 is a research pilot aligned to the updated theoretical model. It explores three core ways of approaching work situations: Understanding the Situation, Structuring the Work, and Starting Action. Working with Others is reported separately, while the effect of context is explored through response shifts across situations.'}</div>"
               new_intro = "<div class=\"grid three\" style=\"margin-top:18px\"><div class=\"report-box\"><h3>${rtl?'ما هو؟':'What is it?'}</h3><p>${rtl?'تقييم يساعدك على فهم الطريقة التي تميل بها إلى التعامل مع مواقف العمل.':'An assessment that helps you understand how you tend to approach work situations.'}</p></div><div class=\"report-box\"><h3>${rtl?'لماذا يهمك؟':'Why does it matter?'}</h3><p>${rtl?'يساعدك على فهم أسلوبك بشكل أوضح، ومعرفة متى يكون مناسبًا، وكيف تتعامل بفعالية أكبر مع أشخاص قد يعملون بطريقة مختلفة عنك.':'It helps you understand your approach more clearly, recognize when it works well, and work more effectively with people who may approach work differently.'}</p></div><div class=\"report-box\"><h3>${rtl?'ماذا ستحصل عليه؟':'What will you get?'}</h3><p>${rtl?'تقرير شخصي يوضح نمطك، وأهم النقاط التي تستحق الانتباه، وما سيتم استكشافه بشكل أعمق في جلسة الكوتشنغ.':'A personal report showing your pattern, key points to notice, and areas to explore further in coaching.'}</p></div></div>"
               text = text.replace(old_notice, new_intro)
 
-              # Landing page: keep the explanation brief and benefit-led, without revealing
-              # the assessment constructs before the participant starts.
               old_landing_p = '<p>يستكشف هذا التقييم كيف تميل إلى فهم الموقف، وتنظيم العمل، والبدء بالفعل، وكيف تدخل الآخرين في طريقة العمل، وكيف يتغير اختيارك عندما يتغير الموقف.</p>'
-              new_landing_p = '<p>تقييم يساعدك على فهم الطريقة التي تميل بها إلى التعامل مع مواقف العمل.</p><div class="grid two" style="margin-top:18px;text-align:start"><div class="report-box"><h3>لماذا يهمك؟</h3><p>يساعدك على فهم أسلوبك بشكل أوضح، ومعرفة متى يكون مناسبًا، وكيف تتعامل بفعالية أكبر مع أشخاص قد يعملون بطريقة مختلفة عنك.</p></div><div class="report-box"><h3>ماذا ستحصل عليه؟</h3><p>تقرير شخصي يوضح نمطك، وأهم النقاط التي تستحق الانتباه، وما سيتم استكشافه بشكل أعمق في جلسة الكوتشنغ.</p></div></div>'
+              new_landing_p = '<p>تقييم يساعدك على فهم الطريقة التي تميل بها إلى التعامل مع مواقف العمل.</p><div class="grid two" style="margin-top:18px;text-align:start"><div class="landing-info-card"><h3>لماذا يهمك؟</h3><p>يساعدك على فهم أسلوبك بشكل أوضح، ومعرفة متى يكون مناسبًا، وكيف تتعامل بفعالية أكبر مع أشخاص قد يعملون بطريقة مختلفة عنك.</p></div><div class="landing-info-card"><h3>ماذا ستحصل عليه؟</h3><p>تقرير شخصي يوضح نمطك، وأهم النقاط التي تستحق الانتباه، وما سيتم استكشافه بشكل أعمق في جلسة الكوتشنغ.</p></div></div>'
               text = text.replace(old_landing_p, new_landing_p)
 
-              # Keep the report title distinct from the assessment name if a previous rename
-              # touched any report-facing text.
+              if path.name == 'index.html':
+                  text = text.replace('class="report-box"', 'class="landing-info-card"')
+                  if '.landing-info-card{' not in text:
+                      css = '.landing-info-card{border:1px solid var(--line);border-radius:17px;padding:15px;background:#fff;text-align:start}.landing-info-card h3{margin:0 0 6px}.landing-info-card p{margin:0}\n'
+                      text = text.replace('@media(max-width:760px)', css + '@media(max-width:760px)', 1)
+
               text = text.replace('Work Approach Assessment Report', 'Your Work Approach Report')
               text = text.replace('تقرير تقييم أسلوب العمل', 'تقرير أسلوبك في العمل')
 
@@ -74,5 +73,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add en.html ar.html index.html coach.html manifest.json item-bank.json
-          git commit -m "Update Work Approach Assessment naming and introduction"
+          git commit -m "Polish Work Approach Assessment landing page"
           git push

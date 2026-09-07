@@ -1,1 +1,0 @@
-Apply the approved participant report redesign to the live survey report.
